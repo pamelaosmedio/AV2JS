@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Banco</title>
+    </head>
+    <body>
+        <div id="rsp"> </div>
+        <script>
+
+            /* 4. Leia os dados de uma conta-corrente: o nome do correntista, o nome do banco, o número da conta, o valor total de cheques a debitar, o total de dinheiro e cheques a creditar, o limite de crédito e o saldo atual. 
+            Imprima o nome do correntista, o nome do banco, o número da conta e o saldo disponível (saldo disponível = (saldo atual + valor do crédito + limite) -valor do débito). */
+
+                let Nome = prompt("Digite o nome do cliente: ");
+                let NomeBanco = prompt("Digite o nome do banco: ");
+                let NumeroConta = prompt("Digite o número da conta:");
+                let Debito = parseInt(prompt("Digite o total a debitar: "));
+                let Dinheiro = parseInt(prompt("Digite o total de dinheiro a creditar: "));
+                let ChequeCredito = parseInt(prompt("Digite o total de cheques a creditar: "));
+                let Limite = parseInt(prompt("Digite o limite da conta: "));
+                let SaldoAtual = parseInt(prompt("Digite o saldo disponível: "));
+
+                let Disponivel = (SaldoAtual + Dinheiro + ChequeCredito + Limite) - Debito;
+
+                document.getElementById("rsp").innerHTML =  
+                ("Bem vindo, " + Nome + "ao Banco" + NomeBanco + "Conta, "+ NumeroConta + "O seu saldo é de R$:" + ` ${Disponivel}`);
+        
+        </script>
+    </body>
+</html>

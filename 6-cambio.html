@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câmbio</title>
+</head>
+<body>
+    <div id="rsp"> </div>
+    <script>
+
+        /* 6. Leia o valor de troca de um dólar por um real e o valor de uma quantia em dólar. Imprima a quantia de reais correspondente aos dólares lidos. */
+
+        let ValorDolar = prompt("Digite a valor do dólar na data de hoje: ");
+        let TrocaDolar = prompt("Quantos dólares você deseja trocar?");
+
+        let TotalCambio = Number(ValorDolar * TrocaDolar);
+
+        document.getElementById("rsp").innerHTML = ("O valor total de dólares em reais é de: R$ " + ` ${TotalCambio}`)
+
+    </script>
+</body>
+</html>

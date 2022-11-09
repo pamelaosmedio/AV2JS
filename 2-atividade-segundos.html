@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horas em segundos</title>
+</head>
+<body>
+    <div id="rsp"></div>
+    <script>
+        /*  2. Leia uma determinada hora, seus minutos e segundos e converta tudo para segundos. 
+        Mostre no vídeo quantos segundos correspondem à hora lida (observação: 1 hora = 60 minutos e 1 minuto = 60 segundos). */
+
+        let Horario = prompt("Digite o horário: ");
+        let Minutos = prompt("Digite os minutos: ");
+        let Segundos = Number(prompt("Digite os segundos: "));
+        let HMS = Horario + Minutos + Segundos;
+
+        let HorSegundos = Number(Horario * 3600);
+        let MinSegundos = Number(Minutos * 60);
+        
+        document.getElementById("rsp").innerHTML=("Total de horas em segundos: " + (HorSegundos + MinSegundos + Segundos))
+
+        </script> 
+</body>
+</html>

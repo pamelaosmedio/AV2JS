@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensal Vendas</title>
+</head>
+<body>
+    <div id="rsp"></div>
+    <script>
+        /* 3. Em uma loja existe um total mensal de vendas. 
+        Faça a leitura do nome da loja e dos totais de vendas em um ano. Imprima o nome da loja e os totais de vendas semestrais. */
+
+        let NomeLoja = prompt("Digite o nome da loja: ");
+        let QtdVendasMensal = Number(prompt("Digite a quantidade de vendas do mês: "));
+
+        let QtdVendasAno = QtdVendasMensal * 12;
+        window.document.write ("Nome da loja: " + NomeLoja, "</br>"); 
+        window.document.write ("Quantidade de vendas no ano: " + QtdVendasAno, "</br>");
+
+        let QtdVendasSemestre = QtdVendasAno / 2;
+        window.document.write ("Nome da loja: " + NomeLoja, "</br>"); 
+        window.document.write ("Quantidade de vendas no semestre: " + QtdVendasSemestre);
+
+    </script>
+</body>
+</html>

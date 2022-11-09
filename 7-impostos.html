@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fábrica</title>
+    </head>
+    <body>
+        <div id="rsp"></div>
+        <script>
+        
+        /* 7. O preço de um produto ao consumidor é a soma do preço de custo mais as porcentagens de impostos e a do distribuidor. 
+        Leia o nome do produto, seu custo de fábrica e as taxas de impostos e do distribuidor. Imprima o nome do produto e o preço final ao consumidor. */
+        
+                let NomeProduto = prompt("Digite o nome do produto: ");
+                let CustoFabrica = parseFloat(prompt("Digite o custo de fabricação do produto: "));
+                let QtdImposto = parseFloat(prompt("Digite a porcentagem (%) de impostos sobre o produto: "));
+                let QtdDistribuidor = parseFloat(prompt("Digite a porcentagem (%) do distribuidor sobre o produto: "));
+
+                let valorFinal = CustoFabrica + ((CustoFabrica * QtdImposto) / 100) + ((CustoFabrica * QtdDistribuidor) / 100);
+
+                document.getElementById("rsp").innerHTML = ("O produto " + NomeProduto + " possui o preço final de R$" + ` ${valorFinal}`);
+
+        </script>
+    </body>
+</html>

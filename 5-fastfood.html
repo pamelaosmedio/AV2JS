@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fast Food</title>
+    </head>
+    <body>
+        <div id="rsp"></div>
+        <script>
+    
+        /* 5. Leia o nome de um cliente de fast food e a quantidade de cada item do menu que ele vai pedir. Imprima o nome do cliente e o total da compra. 
+        Menu Hot dog R$ 1,00, Hambúrguer R$ 1,30, Cheeseburguer R$ 1,50. Refrigerante em lata R$ 1,00, Batatas fritas R$ 0,80 */
+
+                let NomeCliente = prompt("Digite aqui o seu nome: ");
+                
+                let QtdHotDog = parseFloat(prompt("Digite a quantidade de Hot Dogs desejada (R$1,00 cada): "));
+                let valorHotDog = parseFloat(1.00);
+
+                let QtdHamburger = parseFloat(prompt("Digite a quantidade de Hamburguers desejado (R$1,30 cada): "));
+                let valorHamburger = parseFloat(1.30);
+
+                let QtdCheeseburger = parseFloat(prompt("Digite a quantidade de Cheeseburgers desejado (R$1,50 cada): "));
+                let valorCheeseburger = parseFloat(1.50);
+
+                let QtdBatata = parseFloat(prompt("Digite a quantidade de Batata Frita desejada (R$0,80 cada): "));
+                let valorBatata = parseFloat(0.80);
+
+                let QtdRefri = parseFloat(prompt("Digite a quantidade de latas de refrigerante desejado (R$1,00 cada): "));
+                let valorRefri = parseFloat(1.00);
+
+                let valorTotal = (QtdHotDog * valorHotDog) + (QtdHamburger * valorHamburger) + 
+                (QtdCheeseburger * valorCheeseburger) + (QtdBatata * valorBatata) + 
+                (QtdRefri * valorRefri);
+
+                document.getElementById("rsp").innerHTML =("Olá " + NomeCliente + "O valor total do seu pedido é de: R$" 
+                + ` ${valorTotal}`);
+            
+        </script>
+    </body>
+</html>
